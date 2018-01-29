@@ -6574,7 +6574,7 @@ Prefab:
     - target: {fileID: 114097220207796246, guid: fbe78a30bddf7d5499a66733335f5833,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PurchaseMissileLauncher
+      value: SelectMissileLauncher
       objectReference: {fileID: 0}
     - target: {fileID: 114207319233047656, guid: fbe78a30bddf7d5499a66733335f5833,
         type: 2}
@@ -7951,6 +7951,7 @@ GameObject:
   - component: {fileID: 1174287098}
   - component: {fileID: 1174287097}
   - component: {fileID: 1174287099}
+  - component: {fileID: 1174287100}
   m_Layer: 0
   m_Name: GameMaster
   m_TagString: Untagged
@@ -8002,6 +8003,18 @@ MonoBehaviour:
     type: 2}
   missileLauncherPrefab: {fileID: 1080378685490248, guid: 7e9751eb6a84ae944826123331a8b62b,
     type: 2}
+--- !u!114 &1174287100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1174287096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbd676f34a6d0de4bb5892fdf5a98737, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startMoney: 500
 --- !u!1001 &1194606802
 Prefab:
   m_ObjectHideFlags: 0
@@ -10156,6 +10169,11 @@ Prefab:
       propertyPath: m_Name
       value: StandardTurretItem
       objectReference: {fileID: 0}
+    - target: {fileID: 114097220207796246, guid: fbe78a30bddf7d5499a66733335f5833,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SelectStandardTurret
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fbe78a30bddf7d5499a66733335f5833, type: 2}
   m_IsPrefabParent: 0
@@ -12227,6 +12245,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 413e28f0f44cdbe4797809c942fd1984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  standardTurret:
+    prefab: {fileID: 1505255890063938, guid: bd5ba6abc3f49244fa8441b2644e9835, type: 2}
+    cost: 100
+  missileLauncher:
+    prefab: {fileID: 1080378685490248, guid: 7e9751eb6a84ae944826123331a8b62b, type: 2}
+    cost: 200
 --- !u!1001 &1879987170
 Prefab:
   m_ObjectHideFlags: 0
