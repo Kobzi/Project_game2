@@ -17,6 +17,9 @@ public class BuildManager : MonoBehaviour {
     public GameObject buildEffect;
 	
 	private TurretBlueprint turretToBuild;
+    private Node selectedNode;
+
+    public NodeUI nodeUI;
 
     public bool CanBuild { get { return turretToBuild != null; } }
 
@@ -41,8 +44,32 @@ public class BuildManager : MonoBehaviour {
         Debug.Log("Wieżyczka zbudowana! Dostępne środki: " + PlayerStats.Money);
     }
 
+    public void SelectNode (Node node)
+    {
+        if (selectedNode == node)
+        {
+            DeselectNode();
+            return;
+        }
+
+        selectedNode = node;
+        turretToBuild = null;
+
+        nodeUI.SetTarget(node);
+    }
+
+    public void DeselectNode()
+    {
+        selectedNode = null;
+        nodeUI.Hide();
+    }
+
 	public void SelectTurretToBuild (TurretBlueprint turret)
     {
         turretToBuild = turret;
+
+        DeselectNode();
+
+        
     }
 }
