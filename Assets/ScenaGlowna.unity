@@ -1836,7 +1836,7 @@ Prefab:
     - target: {fileID: 224982728984147050, guid: fbe78a30bddf7d5499a66733335f5833,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 184.52054
+      value: 185.75342
       objectReference: {fileID: 0}
     - target: {fileID: 224982728984147050, guid: fbe78a30bddf7d5499a66733335f5833,
         type: 2}
@@ -3439,7 +3439,7 @@ Prefab:
     - target: {fileID: 224982728984147050, guid: fbe78a30bddf7d5499a66733335f5833,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 274.52054
+      value: 275.75342
       objectReference: {fileID: 0}
     - target: {fileID: 224982728984147050, guid: fbe78a30bddf7d5499a66733335f5833,
         type: 2}
@@ -5061,7 +5061,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 611051965}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1114487147}
+        m_MethodName: Sell
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &611051965
@@ -9285,6 +9296,7 @@ MonoBehaviour:
   ui: {fileID: 1956714698}
   upgradeCost: {fileID: 189547279}
   upgradeButton: {fileID: 1926773915}
+  sellAmount: {fileID: 1713197244}
 --- !u!1001 &1122221445
 Prefab:
   m_ObjectHideFlags: 0
@@ -9782,6 +9794,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildEffect: {fileID: 1549018221540834, guid: 10dc4ad1669ceab479cf1f1dfc05dab5,
     type: 2}
+  sellEffect: {fileID: 1402276584260484, guid: 0a7f5024520f55c469a34f1b784fc775, type: 2}
   nodeUI: {fileID: 1114487147}
 --- !u!114 &1174287100
 MonoBehaviour:
@@ -13756,7 +13769,7 @@ GameObject:
   - component: {fileID: 1713197245}
   - component: {fileID: 1713197244}
   m_Layer: 0
-  m_Name: Cost
+  m_Name: Amount
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14832,17 +14845,19 @@ MonoBehaviour:
     cost: 100
     upgradedPrefab: {fileID: 1505255890063938, guid: 4eb2100dbe94805499d6d95c83238239,
       type: 2}
-    upgradeCost: 60
+    upgradeCost: 100
   missileLauncher:
     prefab: {fileID: 1080378685490248, guid: 7e9751eb6a84ae944826123331a8b62b, type: 2}
     cost: 200
-    upgradedPrefab: {fileID: 0}
-    upgradeCost: 0
+    upgradedPrefab: {fileID: 1080378685490248, guid: bb1e61eb63daa2d4cae6f71b839d3035,
+      type: 2}
+    upgradeCost: 200
   laserBeamer:
     prefab: {fileID: 1138315400111166, guid: 90f4914ac4e546546bfc66ca8fadd5c8, type: 2}
     cost: 350
-    upgradedPrefab: {fileID: 0}
-    upgradeCost: 0
+    upgradedPrefab: {fileID: 1138315400111166, guid: 7544a2043950d5e439873428a65e21dc,
+      type: 2}
+    upgradeCost: 350
 --- !u!1001 &1879987170
 Prefab:
   m_ObjectHideFlags: 0
@@ -16167,7 +16182,7 @@ Prefab:
     - target: {fileID: 224982728984147050, guid: fbe78a30bddf7d5499a66733335f5833,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 364.52054
+      value: 365.75342
       objectReference: {fileID: 0}
     - target: {fileID: 224982728984147050, guid: fbe78a30bddf7d5499a66733335f5833,
         type: 2}
