@@ -2078,7 +2078,7 @@ Prefab:
     - target: {fileID: 224982728984147050, guid: fbe78a30bddf7d5499a66733335f5833,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 291.61765
+      value: 185.75342
       objectReference: {fileID: 0}
     - target: {fileID: 224982728984147050, guid: fbe78a30bddf7d5499a66733335f5833,
         type: 2}
@@ -3821,7 +3821,7 @@ Prefab:
     - target: {fileID: 224982728984147050, guid: fbe78a30bddf7d5499a66733335f5833,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 381.61765
+      value: 275.75342
       objectReference: {fileID: 0}
     - target: {fileID: 224982728984147050, guid: fbe78a30bddf7d5499a66733335f5833,
         type: 2}
@@ -10498,10 +10498,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c6336d51856afe448451f69c196f00b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 4044707632435484, guid: f667f193c29ca4c41996e390e4b0da83,
-    type: 2}
+  waves:
+  - enemy: {fileID: 1352567993525390, guid: f667f193c29ca4c41996e390e4b0da83, type: 2}
+    count: 1
+    rate: 2
+  - enemy: {fileID: 1352567993525390, guid: f667f193c29ca4c41996e390e4b0da83, type: 2}
+    count: 2
+    rate: 2
+  - enemy: {fileID: 1352567993525390, guid: f667f193c29ca4c41996e390e4b0da83, type: 2}
+    count: 5
+    rate: 2
+  - enemy: {fileID: 1352567993525390, guid: ced4b37f682d030479a18351889a1e02, type: 2}
+    count: 3
+    rate: 1
+  - enemy: {fileID: 1352567993525390, guid: 3e329f0c81cbd954b8371fba2c30ae58, type: 2}
+    count: 10
+    rate: 3
   spawnPoint: {fileID: 1392564101}
-  timeBetweenWaves: 10
+  timeBetweenWaves: 3
   waveCountdownText: {fileID: 1295502357}
 --- !u!4 &1174287098
 Transform:
@@ -17081,7 +17095,7 @@ Prefab:
     - target: {fileID: 224982728984147050, guid: fbe78a30bddf7d5499a66733335f5833,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 471.61765
+      value: 365.75342
       objectReference: {fileID: 0}
     - target: {fileID: 224982728984147050, guid: fbe78a30bddf7d5499a66733335f5833,
         type: 2}
