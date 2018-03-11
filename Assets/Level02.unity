@@ -10507,13 +10507,28 @@ MonoBehaviour:
     rate: 2
   - enemy: {fileID: 1352567993525390, guid: f667f193c29ca4c41996e390e4b0da83, type: 2}
     count: 5
-    rate: 2
+    rate: 3
   - enemy: {fileID: 1352567993525390, guid: ced4b37f682d030479a18351889a1e02, type: 2}
     count: 3
     rate: 1
   - enemy: {fileID: 1352567993525390, guid: 3e329f0c81cbd954b8371fba2c30ae58, type: 2}
     count: 10
     rate: 3
+  - enemy: {fileID: 1352567993525390, guid: f667f193c29ca4c41996e390e4b0da83, type: 2}
+    count: 10
+    rate: 3
+  - enemy: {fileID: 1352567993525390, guid: f667f193c29ca4c41996e390e4b0da83, type: 2}
+    count: 15
+    rate: 3
+  - enemy: {fileID: 1352567993525390, guid: 3e329f0c81cbd954b8371fba2c30ae58, type: 2}
+    count: 20
+    rate: 3
+  - enemy: {fileID: 1352567993525390, guid: ced4b37f682d030479a18351889a1e02, type: 2}
+    count: 5
+    rate: 2
+  - enemy: {fileID: 1352567993525390, guid: 3e329f0c81cbd954b8371fba2c30ae58, type: 2}
+    count: 25
+    rate: 4
   spawnPoint: {fileID: 1392564101}
   timeBetweenWaves: 3
   waveCountdownText: {fileID: 1295502357}
@@ -10557,7 +10572,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startMoney: 500
-  startLives: 1
+  startLives: 10
 --- !u!114 &1174287101
 MonoBehaviour:
   m_ObjectHideFlags: 0
