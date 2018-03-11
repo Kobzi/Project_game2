@@ -8,12 +8,16 @@ public class GameManager : MonoBehaviour {
 
 	public GameObject gameOverUI;
 
+	public string nextLevel = "Level02";
+	public int levelToUnlock = 2;
+
+	public SceneFader sceneFader;
+
 	void Start()
 	{
 		GameIsOver = false;
 	}
 
-	// Update is called once per frame
 	void Update () {
 		if (GameIsOver)
 			return;
@@ -29,6 +33,13 @@ public class GameManager : MonoBehaviour {
 		GameIsOver = true;
 
 		gameOverUI.SetActive(true);
+	}
+
+	public void WinLevel()
+	{
+		Debug.Log("POZIOM UKOŃCZONY!");
+		PlayerPrefs.SetInt("levelReached", levelToUnlock);
+		sceneFader.FadeTo(nextLevel);
 	}
 
 }

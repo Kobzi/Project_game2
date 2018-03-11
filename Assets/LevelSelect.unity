@@ -329,6 +329,11 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: Level01
       objectReference: {fileID: 0}
+    - target: {fileID: 114595879104421010, guid: 9c073ca2a5a7aba4c8bda45e1a209c65,
+        type: 2}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9c073ca2a5a7aba4c8bda45e1a209c65, type: 2}
   m_IsPrefabParent: 0
@@ -587,6 +592,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fader: {fileID: 1085838530}
+  levelButtons:
+  - {fileID: 1535334825}
+  - {fileID: 999063810}
 --- !u!4 &437586405
 Transform:
   m_ObjectHideFlags: 0
@@ -820,6 +828,12 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 925100014}
+--- !u!114 &999063810 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114389870053135744, guid: 9c073ca2a5a7aba4c8bda45e1a209c65,
+    type: 2}
+  m_PrefabInternal: {fileID: 1025233820}
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1001 &1025233820
 Prefab:
   m_ObjectHideFlags: 0
@@ -1121,6 +1135,12 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1526273541}
+--- !u!114 &1535334825 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114389870053135744, guid: 9c073ca2a5a7aba4c8bda45e1a209c65,
+    type: 2}
+  m_PrefabInternal: {fileID: 117840502}
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &1549691024
 GameObject:
   m_ObjectHideFlags: 0
