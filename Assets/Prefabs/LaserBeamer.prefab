@@ -149,7 +149,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1664340723552470}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -0, y: 0.49525392, z: 0}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 100, y: 100, z: 63.703358}
   m_Children: []
   m_Father: {fileID: 4566284986207754}
@@ -203,7 +203,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1377163525059698}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 1.3974535, z: 0}
+  m_LocalPosition: {x: 0, y: 0.9022001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4323758557800436}
@@ -389,6 +389,8 @@ MonoBehaviour:
   bulletPrefab: {fileID: 0}
   fireRate: 1
   useLaser: 1
+  damageOverTime: 30
+  slowAmount: 0.5
   lineRenderer: {fileID: 120460842928152668}
   impactEffect: {fileID: 198148512876998502}
   impactLight: {fileID: 108296502185528320}
@@ -544,7 +546,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 374309202
+  randomSeed: -1805284427
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -3905,7 +3907,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1653542137
+  randomSeed: -859319172
   InitialModule:
     serializedVersion: 3
     enabled: 1
