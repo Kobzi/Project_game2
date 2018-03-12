@@ -1709,7 +1709,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "PRZE\u017BYTYCH RUND"
+  m_Text: PRZETRWANYCH RUND
 --- !u!222 &179058581
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8638,7 +8638,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: RETRY
+  m_Text: RESTART
 --- !u!222 &932128061
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9771,7 +9771,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: PAUSED
+  m_Text: PAUZA
 --- !u!222 &1108147210
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10586,9 +10586,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverUI: {fileID: 1747413121}
-  nextLevel: Level02
-  levelToUnlock: 2
-  sceneFader: {fileID: 376383860}
+  completeLevelUI: {fileID: 0}
 --- !u!114 &1174287102
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15016,7 +15014,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd36942c4ec125747b88979750745261, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roundsText: {fileID: 1414942247}
   sceneFader: {fileID: 376383860}
   menuSceneName: MainMenu
 --- !u!95 &1747413124
@@ -16782,7 +16779,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: CONTINUE
+  m_Text: KONTYNUUJ
 --- !u!222 &1961347286
 CanvasRenderer:
   m_ObjectHideFlags: 0
